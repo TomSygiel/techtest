@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "abocadays"
+    },
+    {
+      "id": 2,
+      "name": "men's concept"
+    },
+    {
+      "id": 3,
+      "name": "viviusana"
+    },
+    {
+      "id": 4,
+      "name": "sales vademecum"
+    }
+  ]
+}

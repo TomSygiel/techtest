@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, viewport-fit=cover, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width, initial-scale=1" />
+
+  <title>iuebnda</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="g">
+
+  <link rel="icon" href="./assets/images/favicon.png">
+  <link rel="icon" href="" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.css">
+  
+  </head>
+
+  <body>
+
+    <header class="container text-center">
+      <a href="#">
+        <div class="header-logo--frame">
+          <img src="./assets/images/iubenda_logo-6.png" alt="Iuebnda logo" />
+        </div>
+      </a>
+    </header>
+
+    <main class="container-fluid page-content">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="row client-info--row">
+            <div class="col-12 col-md-6">
+                <div class="client-info">
+                  <div class="client-image--frame">
+                    <img src="./assets/images/desktop.svg" alt="Iuebnda logo" />
+                  </div>
+                  <div class="client-info--text">
+                    <h4><a href="#">www.domain.com</a></h4>
+                    <a href="#">Account & Billing info</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="progress-info">
+                <div class="progress-info--text">
+                  <h4>Your current compliance rating</h4>
+                </div>
+                <div class="box">
+                  <div class="chart" data-percent="23" >23%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="message-box">
+            <div class="icon-frame">
+              <img src="./assets/images/icon_checkmark.svg" class="filter-green" alt="" />
+            </div>
+            <div class="text-frame">
+              <p>Your website has been created and your legal documents have been generated. Setup your cookie banner and privacy policy button to complete the integration.</p>
+            </div>
+            <div class="close-btn ml-auto" id='close-notice' >
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </div>
+
+          </div>
+
+         
+        <!-- <form id="myForm" > -->
+
+          <div class="row">
+            <div class="col-12">
+              <div class="banner-options">
+
+                <label class="switch">
+                  <input type="checkbox" id="toggleCookieBanner">
+                  <span class="slider round"></span>
+                </label>
+                <div class="banner-text">
+                  <h3>Add a cookie banner</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+
+              <div class="row dropdown-options" id="dropdown-options1">
+                <div class="col-3">
+                  <h3>Position</h3>
+
+                  <select class="bannerpicker">
+                    <option value="top" class="test" data-thumbnail="./assets/images/position-top.png">
+                    </option>
+                    <option value="center" class="test" data-thumbnail="./assets/images/position-center.png">
+                      
+                    </option>
+                    <option value="bottom" class="test" data-thumbnail="./assets/images/position-bottom.png">
+                      
+                    </option>
+                    
+                  </select>
+        
+                  <div class="pos-select">
+                    <button class="btn-select" value=""></button>
+                    <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    <div class="b">
+                      <ul id="a"></ul>
+                    </div>
+                  </div>
+
+                  <!-- <div>
+                    <select name="position" id="banner-position">
+                      <option value="top" >
+                        <div class="position-top">top</div>
+                      </option>
+                      <option value="center" style="background-image:url('/assets/images/position-bottom.png');">
+                      </option>
+                      <option value="bottom">
+                        <div class="position-bottom"></div>
+                      </option>
+                    </select>
+                  </div> -->
+
+                </div>
+                <div class="col-12 col-xl-8">
+                  <h3>Theme</h3>
+
+                  <div class="text-center">
+                    <input type="radio" id="theme1" name="theme">
+                    <label class="radio-selector radio-selector-large dark" for="theme1">
+                      <div class="theme-frame-dark"></div>
+                    </label>
+                    <p>Dark</p>
+                  </div>
+
+                  <div class="text-center">
+                    <input type="radio" id="theme2" name="theme">
+                    <label class="radio-selector radio-selector-large light" for="theme2">
+                      <div class="theme-frame-light"></div>
+                    </label>
+                    <p>Light</p>
+                  </div>
+
+                  <div class="text-center">
+                    <input type="radio" id="theme3" name="theme">
+                    <label class="radio-selector radio-selector-large custom" for="theme3"><span></span><i class="fa fa-plus" aria-hidden="true"></i>
+                    </label>
+                    <p>Custom style</p>
+                  </div>
+
+                </div>
+                <div class="col-12">
+                  <h3>Legislation</h3>
+
+                  <div>
+                    <input type="radio" id="legislation1" name="legislation">
+                    <label class="radio-selector" for="legislation1"><span></span>GDPR Only</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="legislation2" name="legislation">
+                    <label class="radio-selector" for="legislation2"><span></span>CCPA Only</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="legislation3" name="legislation">
+                    <label class="radio-selector" for="legislation3"><span></span>Both</label>
+                  </div>
+
+                </div>
+                <div class="col-12">
+                  <h3>Require consent from</h3>
+
+                  <div>
+                    <input type="radio" id="consent1" name="consent">
+                    <label class="radio-selector filter-green" for="consent1"><span><img src="./assets/images/icon_ue_flag.svg"></span> EU Only</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="consent2" name="consent">
+                    <label class="radio-selector filter-green" for="consent2"><span><img src="./assets/images/icon_world.svg"></span> World Wide</label>
+                  </div>
+
+                </div>
+                <div class="col-12 col-xl-8">
+                  <h3>Banner buttons</h3>
+
+                  <label class="container">Explicit Accept and Customize buttons
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="container">Explicit Reject button
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="col-12 col-xl-8">
+                  <h3>Other options</h3>
+
+                  <label class="container">Enable IAB Transparency and Consent Framework- <span >Learn more</span>
+                    <input type="checkbox" checked="checked" id="toggleInfoWindow1">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <div class="info-window" id="info-window1">
+                    <div class="info-icon-frame">
+                      <span>!</span>
+                    </div>
+                    <div class="info-text-frame">
+                      <p>You may want to activate this feature if you show ads on your website</p>
+                    </div>
+                  </div>
+
+                  
+                  
+                  <label class="container">Enable Google AMP support <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    <input type="checkbox" checked="checked" id="toggleInfoWindow2" >
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <div class="info-window" id="info-window2">
+                    <div class="info-icon-frame">
+                      <span>!</span>
+                    </div>
+                    <div class="info-text-frame">
+                      <p>You may want to activate this feature if you show ads on your website</p>
+                    </div>
+                  </div>
+
+                  <label class="container">Automatically block scripts detected by the plugin <i  class="fa fa-question-circle" aria-hidden="true"></i>
+                    <input type="checkbox" checked="checked" id="toggleInfoWindow3">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <div class="info-window" id="info-window3">
+                    <div class="info-icon-frame">
+                      <span>!</span>
+                    </div>
+                    <div class="info-text-frame">
+                      <p>You may want to activate this feature if you show ads on your website</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-12">
+              <div class="banner-options">
+
+                <label class="switch">
+                  <input type="checkbox" id="togglePrivacyPolicy">
+                  <span class="slider round"></span>
+                </label>
+                <div class="banner-text">
+                  <h3>Add the privacy policy button</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+
+              <div class="row dropdown-options" id="dropdown-options2">
+                
+                <div class="col-12">
+                  <h3>Button style</h3>
+
+                <div class="text-center">
+                  <input type="radio" id="btn-style1" name="btn-style">
+                  <label class="radio-selector radio-button-style" for="btn-style1">
+                    <div class="button-light"></div>
+                  </label>
+                  <p>Light</p>
+                </div>
+
+                <div class="text-center">
+                  <input type="radio" id="btn-style2" name="btn-style">
+                  <label class="radio-selector radio-button-style" for="btn-style2">
+                    <div class="button-dark"></div>
+                  </label>
+                  <p>Dark</p>
+                </div>
+
+                </div>
+                
+                <div class="col-12">
+                  <h3>Button position</h3>
+
+                  <label class="container-circle">Pat automatically button on footer
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="container-circle">Integrate button manually
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row settings--row">
+            <div class="col-12 col-md-6">
+              <a href="#" class="reset-settings">
+                <h4>Reset settings</h4>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <button type="submit" class="integrate-settings" onclick="myFunction()">
+                <h4>Integrate</h4>
+              </button>
+            </div>
+          </div>
+
+        <!-- </form> -->
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <ul>
+        <li><a href="#" >Documentation</a></li>
+        <li><a href="#" >Contact support</a></li>
+      </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="./assets/js/scripts.js"></script>
+
+  </body>
+</html>
