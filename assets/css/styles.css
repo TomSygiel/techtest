@@ -791,12 +791,13 @@ select#banner-position {
         padding: 18px 50px;
         font-size: 21px;
     }
+}
+@media screen and (min-width: 1340px) {
     .fa.fa-caret-down {
         top: -40px;
         left: -40px;
     }
 }
-
 @media screen and (min-width: 1440px) {
     .client-info--text {
         left: 60%;
